@@ -46,6 +46,10 @@
     "Name": "Repeat mode",
     "Tooltip": "Change the repeat mode (None/All/One)"
   },
+  "fun.shiro.ytmdc.seek": {
+    "Name": "Seek",
+    "Tooltip": "Seek forward or backward by a configurable number of seconds"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -94,7 +98,9 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Not authenticated",
       "CONNECTION_STATUS_CHECKING": "Checking...",
       "CONNECTION_STATUS_RATE_LIMIT": "Rate limited. Retry in {seconds, plural, one {# second} other {# seconds}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet"
+      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet",
+      "SEEK_SECONDS": "Seek (seconds)",
+      "SEEK_HELP": "<p>Enter a positive number to skip forward, or a negative number to skip backward.</p>"
     }
   }
 }

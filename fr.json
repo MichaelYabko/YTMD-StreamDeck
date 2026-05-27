@@ -46,6 +46,10 @@
     "Name": "Lecture en boucle",
     "Tooltip": "Activer ou désactiver la lecture en boucle"
   },
+  "fun.shiro.ytmdc.seek": {
+    "Name": "Avancer/Reculer",
+    "Tooltip": "Avancer ou reculer la lecture d'un nombre de secondes configurable"
+  },
   "Localization": {
     "PI": {
       "HOST": "Hôte",
@@ -90,7 +94,9 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Non authentifié",
       "CONNECTION_STATUS_CHECKING": "Vérification...",
       "CONNECTION_STATUS_RATE_LIMIT": "Limite atteinte. Nouvel essai dans {seconds, plural, one {# seconde} other {# secondes}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Pas encore vérifié"
+      "CONNECTION_STATUS_NOT_CHECKED": "Pas encore vérifié",
+      "SEEK_SECONDS": "Secondes (avancer/reculer)",
+      "SEEK_HELP": "<p>Saisissez un nombre positif pour avancer ou négatif pour reculer.</p>"
     }
   }
 }

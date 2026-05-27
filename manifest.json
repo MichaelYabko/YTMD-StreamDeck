@@ -234,6 +234,20 @@
       "SupportedInMultiActions": true,
       "Tooltip": "Play a selected playlist",
       "UUID": "fun.shiro.ytmdc.play-playlist"
+    },
+    {
+      "Icon": "icons/seek",
+      "Name": "Seek",
+      "States": [
+        {
+          "Image": "icons/seek",
+          "TitleAlignment": "middle",
+          "FontSize": 16
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Seek forward or backward by a configurable number of seconds",
+      "UUID": "fun.shiro.ytmdc.seek"
     }
   ],
   "CodePath": "action.html",

@@ -43,5 +43,7 @@ export interface LocalizationInterface {
         CONNECTION_STATUS_CHECKING: string;
         CONNECTION_STATUS_RATE_LIMIT: string;
         CONNECTION_STATUS_NOT_CHECKED: string;
+        SEEK_SECONDS: string;
+        SEEK_HELP: string;
     };
 }

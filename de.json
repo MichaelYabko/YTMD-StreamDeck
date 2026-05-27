@@ -46,6 +46,10 @@
     "Name": "Wiederholungsmodus",
     "Tooltip": "Wechselt den Wiederholungsmodus"
   },
+  "fun.shiro.ytmdc.seek": {
+    "Name": "Vor-/Zurückspulen",
+    "Tooltip": "Spult um eine konfigurierbare Anzahl von Sekunden vor oder zurück"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -90,7 +94,9 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Nicht authentifiziert",
       "CONNECTION_STATUS_CHECKING": "Überprüfen...",
       "CONNECTION_STATUS_RATE_LIMIT": "Ratenlimit erreicht. Neuer Versuch in {seconds, plural, one {# Sekunde} other {# Sekunden}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft"
+      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft",
+      "SEEK_SECONDS": "Sekunden vor-/zurückspulen",
+      "SEEK_HELP": "<p>Gib eine positive Zahl ein, um vorzuspulen, oder eine negative Zahl, um zurückzuspulen.</p>"
     }
   }
 }

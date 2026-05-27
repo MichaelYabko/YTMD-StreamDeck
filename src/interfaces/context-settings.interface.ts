@@ -13,3 +13,7 @@ export interface PlaylistSettings {
     playlistId?: string;
     playlistUrl?: string;
 }
+
+export interface SeekSettings {
+    seconds: number;
+}

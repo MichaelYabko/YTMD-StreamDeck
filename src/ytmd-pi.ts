@@ -5,6 +5,7 @@ import {PisAbstract} from './pis/pis.abstract';
 import {GlobalSettingsPi} from './pis/features/global-settings.pi';
 import {PlayPausePi} from './pis/features/play-pause.pi';
 import {PlayPlaylistPi} from './pis/features/play-playlist.pi';
+import {SeekPi} from './pis/features/seek.pi';
 import {VolumeChangePi} from './pis/features/volume-change.pi';
 import {PiI18n} from './pis/services/pi-i18n';
 
@@ -36,6 +37,9 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
     // Volume Settings
     public volumeSettings: HTMLElement;
     public volumeInput: HTMLInputElement;
+    // Seek Settings
+    public seekSettings: HTMLElement;
+    public seekSecondsInput: HTMLInputElement;
     private localization: LocalizationInterface['PI'];
     // Error messages
     private errorsElement: HTMLElement;
@@ -145,6 +149,9 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
                     this.volumeSettings
                 );
                 break;
+            case ActionTypes.SEEK:
+                this.action = new SeekPi(this, this.actionInfo.context, this.seekSettings);
+                break;
         }
     }
 
@@ -222,6 +229,9 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
 
         this.volumeSettings = document.getElementById('volumeSettings') as HTMLElement;
         this.volumeInput = document.getElementById('volumeInput') as HTMLInputElement;
+
+        this.seekSettings = document.getElementById('seekSettings') as HTMLElement;
+        this.seekSecondsInput = document.getElementById('seekSecondsInput') as HTMLInputElement;
 
         this.errorsElement = document.getElementById('errors') as HTMLElement;
         this.errorTemplateElement = document.getElementById('error-template') as HTMLElement;
